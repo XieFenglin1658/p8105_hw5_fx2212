@@ -157,7 +157,7 @@ homicide_data = read_csv("homicide-data.csv") |>
   filter(city_state != "Tulsa, AL")
 ```
 
-Remove incorrect entry: Tulsa, AL (Tulsa is actually in Oklahoma, not Alabama), thus this data may not valid.
+Remove incorrect entry: Tulsa, AL (Tulsa is actually in Oklahoma, not Alabama), thus this data may not be valid.
 
 ### Summarize homicide data
 
