@@ -153,8 +153,11 @@ Comparison of estimates: The sample average of μ̂ across tests for which the n
 homicide_data = read_csv("homicide-data.csv") |> 
   mutate(
     city_state = str_c(city, ", ", state)
-  )
+  ) |> 
+  filter(city_state != "Tulsa, AL")
 ```
+
+Remove incorrect entry: Tulsa, AL (Tulsa is actually in Oklahoma, not Alabama), thus this data may not valid.
 
 ### Summarize homicide data
 
